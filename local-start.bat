@@ -1,0 +1,1 @@
+cd C:\Users\Benjo\OneDrive\Desktop\Code projects\express-js-playground && SET DEBUG=express-js-playground:* & npm start
