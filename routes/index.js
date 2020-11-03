@@ -1,20 +1,23 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* index.ejs aliases */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Home' });
 });
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Home' });
 });
 router.get('/index', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Home' });
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'Express - About', foo: 'bar' });
+  res.render('about', { title: 'About', foo: 'bar' });
 });
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contact' });
+});
 
 module.exports = router;

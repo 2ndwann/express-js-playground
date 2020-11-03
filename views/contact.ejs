@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <%- include("partials/header.ejs"); %>
+	    <h2>Contact Us:</h2>
+        
+        <form action="/contact" method="POST">
+            <label for="first-name">First Name:</label>
+            <input name="first-name" type="text"/>
+        </form>
+    </body>
+</html>

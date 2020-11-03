@@ -5,9 +5,8 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>about page of <%= title %></p>
-	<a href="/index">Home</a>
+    <%- include("partials/header.ejs"); %>
+	<h2>About Us:</h2>
 	<p>Test variable: <%= foo %></p>
   </body>
 </html>
